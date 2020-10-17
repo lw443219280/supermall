@@ -1,15 +1,17 @@
 <template>
-  <div class="hello">
-   
+  <div>
+    购物车
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
-  props: {
-    msg: String
-  }
+  name: 'Cart',
+  data() {
+    return {
+      
+    }
+  },
 }
 </script>
 

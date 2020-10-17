@@ -1,15 +1,17 @@
 <template>
-  <div class="hello">
-   
+  <div>
+    分类
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
-  props: {
-    msg: String
-  }
+  name: 'Category',
+  data() {
+    return {
+      
+    }
+  },
 }
 </script>
 
