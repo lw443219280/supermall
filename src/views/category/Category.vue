@@ -1,21 +1,136 @@
 <template>
-  <div>
-    分类
+  <div class="wrapper" ref="aaa">
+    <ul class="content">
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+      <li>分类</li>
+    </ul>
   </div>
 </template>
 
 <script>
+import BScroll from 'better-scroll'
+
 export default {
   name: 'Category',
   data() {
     return {
-      
+      scroll:null
     }
   },
+  mounted() {
+    this.scroll = new BScroll(this.$refs.aaa,{
+      probeType:3,
+      pullUpLoad:true
+    })
+
+    
+  }
+
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
+  .wrapper{
+    height: 100px;
+    background-color: red;
+    overflow: hidden;
+  }
 </style>
